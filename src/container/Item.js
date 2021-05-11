@@ -22,7 +22,7 @@ const Item = ({ id, img, articulo, marca, precio }) => {
                 marginRight: "5PX",
                 padding: "10PX",
               }}
-              onClick={() => setCount(count + 1)}
+              onClick={() => setCount(count - 1)}
             >
               -
             </button>
