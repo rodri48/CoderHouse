@@ -5,7 +5,7 @@ import Navegacion from "./components/Navegacion";
 
 import Home from "./components/Home";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
