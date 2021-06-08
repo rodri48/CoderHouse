@@ -17,20 +17,23 @@ export default function Carousel1() {
           />
           <Carousel.Caption>
             <h3>Tienda de Comida</h3>
-            <p>Alfajores, Dulce de leche, yerba mate</p>
+            <p style={{ color: "black" }}>
+              {" "}
+              los mejores Alfajores y Dulce de leche
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://static.misionesonline.news/wp-content/uploads/2018/10/0029473993-3l84uqj2rp7g.jpg"
+            src="https://images.clarin.com/1969/12/31/dulce-de-leche___SymU8z3KNx_1256x620__1.jpg"
             alt="Second slide"
             height="700px"
           />
 
           <Carousel.Caption>
-            <h3>Contactate</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 style={{ color: "white" }}>Contactate</h3>
+            <p>si tenes alguna duda contactanos</p>
             <Button href="/home">Apreta aqui</Button>
           </Carousel.Caption>
         </Carousel.Item>

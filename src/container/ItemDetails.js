@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import Lapataia from "../assets/Lapataia.webp";
 import Portezuelo from "../assets/Portezuelo.jpg";
-import Surprise from "../assets/Surprise.jpeg";
 import Triple from "../assets/Triple.jpg";
+import blanco from "../assets/blanco.jpg";
 import { useParams } from "react-router-dom";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
+import { CantContext } from "../components/CantContext";
 
 const IteamDetails = () => {
+  const { canti, finalCounter, booleano } = useContext(CantContext);
+  const [cantidad, setCantidad] = canti;
+  const [cantidadFinal, setCantidadFinal] = finalCounter;
+  // eslint-disable-next-line no-unused-vars
+  const [addToCart, setAddToCart] = booleano;
+
+  function handleClick(product) {
+    setAddToCart((addToCart) => (addToCart = true));
+
+    setCantidadFinal([...cantidadFinal, state]);
+    setCantidad(cantidadPro + 1);
+  }
+
+  const [cantidadPro, setcantidadPro] = useState(0);
+
   const { id } = useParams();
-  console.log(id);
+  console.log(id, "id use params");
 
   const productos = [
     {
@@ -33,7 +49,7 @@ const IteamDetails = () => {
       articulo: "Alfajor de Chocolate",
       Marca: "Portezuelo",
       price: 15.99,
-      imagen: Surprise,
+      imagen: blanco,
       stock: 4,
     },
 
@@ -77,16 +93,29 @@ const IteamDetails = () => {
   console.log(productos, " productos nuevo");
   //console.log(items[id - 1], "rodri aca");
 
+  const id1 = productos.findIndex((o) => {
+    console.log(o.id, id);
+
+    return o.id.toString() === id;
+  });
+
+  console.log(id1, "aca");
+
+  // eslint-disable-next-line no-unused-vars
+  const [state, setstate] = useState(productos[id1]);
+
   return (
     <div>
       <Jumbotron>
-        <h1>{productos[id - 1].articulo}</h1>
+        <h1>{state.articulo}</h1>
 
-        <p>{productos[id - 1].Marca}</p>
-        <p>{productos[id - 1].price}</p>
-        <img src={productos[id - 1].imagen} alt="Girl in a jacket"></img>
+        <p>{state.Marca}</p>
+        <p>{state.price}</p>
+        <img src={state.imagen} alt="Dulce" style={{ height: "400px" }}></img>
         <p>
-          <Button variant="primary">Comprar</Button>
+          <Button onClick={() => handleClick(state)} variant="primary">
+            Comprar
+          </Button>
         </p>
       </Jumbotron>
     </div>

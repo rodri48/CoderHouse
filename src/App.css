@@ -177,3 +177,48 @@
     font-weight: 600;
   }
 }
+
+html,
+body {
+  height: 100%;
+}
+.form-wrapper {
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-wrapper .form-control-lg,
+.form-wrapper .btn-lg {
+  border-radius: 0.9rem;
+}
+.form-wrapper h1 {
+  color: #3d3d3d;
+}
+
+.items {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .items {
+    flex-direction: column;
+  }
+}
+
+.fa-shopping-cart {
+  aria-hidden: true;
+}
