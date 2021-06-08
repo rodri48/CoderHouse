@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CantContext } from "./CantContext";
 import { Link } from "react-router-dom";
@@ -23,7 +22,7 @@ function Navegacion() {
       <Navbar bg="primary" variant="dark">
         <Navbar.Brand href="/">E-commerce</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/CoderHouse">Home</Nav.Link>
         </Nav>
         <Form inline>
           <Link to="/Cart">
