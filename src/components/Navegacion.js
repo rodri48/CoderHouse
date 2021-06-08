@@ -22,7 +22,7 @@ function Navegacion() {
       <Navbar bg="primary" variant="dark">
         <Navbar.Brand href="/">E-commerce</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="/CoderHouse">Home</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
         </Nav>
         <Form inline>
           <Link to="/Cart">
