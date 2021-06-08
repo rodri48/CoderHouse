@@ -14,7 +14,7 @@ import Thankyou from "./components/Thankyou";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navegacion />
 
