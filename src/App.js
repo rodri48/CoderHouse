@@ -8,7 +8,7 @@ import Info from "./components/Info";
 import ContactForm from "./components/ContactForm";
 import Cart from "./components/Cart";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import AppFooter from "./components/Footer";
 import Thankyou from "./components/Thankyou";
 
