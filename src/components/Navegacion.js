@@ -28,20 +28,21 @@ function Navegacion() {
         <Form inline>
           <Link to="/Cart">
             <i
-              class="fas fa-shopping-cart fa-2x"
+              class="fas fa-shopping-cart fa-3x"
               style={{ marginRight: "5px", color: "black" }}
             ></i>
             <span
               className="circle"
-              style={{ marginRight: "5px", color: "black" }}
+              style={{ fontSize: "30px", marginRight: "5px", color: "black" }}
             >
               {cantidad}
             </span>
           </Link>
 
-          {booleano === true ? <h5> {cantidad} </h5> : null}
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-light">Search</Button>
+          {booleano === true ? <h3> {cantidad} </h3> : null}
+          {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-light">Search</Button> */}
+          <h4 style={{ marginLeft: "10px" }}> Carrito de compras</h4>
         </Form>
       </Navbar>
     </>

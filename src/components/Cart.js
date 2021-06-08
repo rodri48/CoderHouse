@@ -8,7 +8,7 @@ function Cart() {
   // eslint-disable-next-line no-unused-vars
   const [cantidad, setCantidad] = canti;
   const [cantidadFinal, setCantidadFinal] = finalCounter;
-  const [idCart, setCart] = idCarrito;
+  //const [idCart, setCart] = idCarrito;
   // eslint-disable-next-line no-unused-vars
 
   const [addToCart, setAddToCart] = booleano;
@@ -188,7 +188,7 @@ function Cart() {
               <div class="col-md-4 order-md-2 mb-4">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                   <span class="text-muted">tu carrito</span>
-                  <span class="badge badge-secondary badge-pill">3</span>
+                  <span class="badge badge-secondary badge-pill"></span>
                 </h4>
 
                 {cantidadFinal.map((producto, index) => {
@@ -199,7 +199,7 @@ function Cart() {
                           <h6 class="my-0">{producto.articulo} </h6>
                           <small class="text-muted">Brief description</small>
                         </div>
-                        <span class="text-muted">$12</span>
+                        <span class="text-muted">{totalPrice}</span>
                       </li>
                     </ul>
                   );
@@ -207,8 +207,8 @@ function Cart() {
 
                 <ul class="list-group mb-3">
                   <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (USD)</span>
-                    <strong>$20</strong>
+                    <span>Total </span>
+                    <strong>{totalPrice * cantidad}</strong>
                   </li>
                 </ul>
 
