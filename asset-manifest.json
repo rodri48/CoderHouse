@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/CoderHouse/static/css/main.6b3d83a4.chunk.css",
-    "main.js": "/CoderHouse/static/js/main.aeb51a67.chunk.js",
-    "main.js.map": "/CoderHouse/static/js/main.aeb51a67.chunk.js.map",
-    "runtime-main.js": "/CoderHouse/static/js/runtime-main.26cfecb4.js",
-    "runtime-main.js.map": "/CoderHouse/static/js/runtime-main.26cfecb4.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/CoderHouse/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e3857f4e.chunk.js": "/CoderHouse/static/js/2.e3857f4e.chunk.js",
-    "static/js/2.e3857f4e.chunk.js.map": "/CoderHouse/static/js/2.e3857f4e.chunk.js.map",
-    "static/js/3.127478bf.chunk.js": "/CoderHouse/static/js/3.127478bf.chunk.js",
-    "static/js/3.127478bf.chunk.js.map": "/CoderHouse/static/js/3.127478bf.chunk.js.map",
+    "main.css": "/CoderHouse/static/css/main.ddf64bb0.chunk.css",
+    "main.js": "/CoderHouse/static/js/main.0a00eaae.chunk.js",
+    "main.js.map": "/CoderHouse/static/js/main.0a00eaae.chunk.js.map",
+    "runtime-main.js": "/CoderHouse/static/js/runtime-main.28275f07.js",
+    "runtime-main.js.map": "/CoderHouse/static/js/runtime-main.28275f07.js.map",
+    "static/css/2.8e2c20ee.chunk.css": "/CoderHouse/static/css/2.8e2c20ee.chunk.css",
+    "static/js/2.56ca18ea.chunk.js": "/CoderHouse/static/js/2.56ca18ea.chunk.js",
+    "static/js/2.56ca18ea.chunk.js.map": "/CoderHouse/static/js/2.56ca18ea.chunk.js.map",
+    "static/js/3.0907299c.chunk.js": "/CoderHouse/static/js/3.0907299c.chunk.js",
+    "static/js/3.0907299c.chunk.js.map": "/CoderHouse/static/js/3.0907299c.chunk.js.map",
     "index.html": "/CoderHouse/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/CoderHouse/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.6b3d83a4.chunk.css.map": "/CoderHouse/static/css/main.6b3d83a4.chunk.css.map",
-    "static/js/2.e3857f4e.chunk.js.LICENSE.txt": "/CoderHouse/static/js/2.e3857f4e.chunk.js.LICENSE.txt",
+    "static/css/2.8e2c20ee.chunk.css.map": "/CoderHouse/static/css/2.8e2c20ee.chunk.css.map",
+    "static/css/main.ddf64bb0.chunk.css.map": "/CoderHouse/static/css/main.ddf64bb0.chunk.css.map",
+    "static/js/2.56ca18ea.chunk.js.LICENSE.txt": "/CoderHouse/static/js/2.56ca18ea.chunk.js.LICENSE.txt",
     "static/media/Lapataia.dba7b977.webp": "/CoderHouse/static/media/Lapataia.dba7b977.webp",
     "static/media/Portezuelo.d92177e1.jpg": "/CoderHouse/static/media/Portezuelo.d92177e1.jpg",
-    "static/media/Surprise.76776077.jpeg": "/CoderHouse/static/media/Surprise.76776077.jpeg",
     "static/media/Tienda.198e67bb.png": "/CoderHouse/static/media/Tienda.198e67bb.png",
-    "static/media/Triple.c18f6cb8.jpg": "/CoderHouse/static/media/Triple.c18f6cb8.jpg"
+    "static/media/Triple.93802c7b.jpg": "/CoderHouse/static/media/Triple.93802c7b.jpg",
+    "static/media/blanco.ed09664c.jpg": "/CoderHouse/static/media/blanco.ed09664c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.26cfecb4.js",
-    "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e3857f4e.chunk.js",
-    "static/css/main.6b3d83a4.chunk.css",
-    "static/js/main.aeb51a67.chunk.js"
+    "static/js/runtime-main.28275f07.js",
+    "static/css/2.8e2c20ee.chunk.css",
+    "static/js/2.56ca18ea.chunk.js",
+    "static/css/main.ddf64bb0.chunk.css",
+    "static/js/main.0a00eaae.chunk.js"
   ]
 }
