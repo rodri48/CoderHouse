@@ -51,7 +51,7 @@ function Thankyou() {
       </Modal>
 
       <p class="lead">
-        <a class="btn btn-primary btn-sm" href="/" role="button">
+        <a class="btn btn-primary btn-sm" href="/CoderHouse" role="button">
           Retornar a pagina principal
         </a>
       </p>
