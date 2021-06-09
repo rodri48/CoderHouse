@@ -20,9 +20,9 @@ function Navegacion() {
   return (
     <>
       <Navbar bg="primary" variant="dark">
-        <Navbar.Brand href="/">E-commerce</Navbar.Brand>
+        <Navbar.Brand href="/home">E-commerce</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/home">Home</Nav.Link>
         </Nav>
         <Form inline>
           <Link to="/Cart">
