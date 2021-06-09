@@ -8,18 +8,18 @@ import Info from "./components/Info";
 import ContactForm from "./components/ContactForm";
 import Cart from "./components/Cart";
 
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AppFooter from "./components/Footer";
 import Thankyou from "./components/Thankyou";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <Navegacion />
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/CoderHouse">
             <Home />
             <Info />
           </Route>
@@ -39,7 +39,7 @@ function App() {
         <ContactForm />
         <AppFooter />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 

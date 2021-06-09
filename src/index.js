@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Cantidad } from "./components/CantContext";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cantidad>
-      <App />
-    </Cantidad>
+    <HashRouter>
+      <Cantidad>
+        <App />
+      </Cantidad>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
