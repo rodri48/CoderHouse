@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CoderHouse/static/css/main.ddf64bb0.chunk.css",
-    "main.js": "/CoderHouse/static/js/main.643f0e22.chunk.js",
-    "main.js.map": "/CoderHouse/static/js/main.643f0e22.chunk.js.map",
+    "main.js": "/CoderHouse/static/js/main.3993a5b0.chunk.js",
+    "main.js.map": "/CoderHouse/static/js/main.3993a5b0.chunk.js.map",
     "runtime-main.js": "/CoderHouse/static/js/runtime-main.632aefc3.js",
     "runtime-main.js.map": "/CoderHouse/static/js/runtime-main.632aefc3.js.map",
     "static/css/2.8e2c20ee.chunk.css": "/CoderHouse/static/css/2.8e2c20ee.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.8e2c20ee.chunk.css",
     "static/js/2.9371f315.chunk.js",
     "static/css/main.ddf64bb0.chunk.css",
-    "static/js/main.643f0e22.chunk.js"
+    "static/js/main.3993a5b0.chunk.js"
   ]
 }
