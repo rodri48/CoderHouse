@@ -215,7 +215,9 @@ function Cart() {
                           <h6 class="my-0">{producto.articulo} </h6>
                           <small class="text-muted">Brief description</small>
                         </div>
-                        <span class="text-muted">{totalPrice}</span>
+                        <span class="text-muted">
+                          {producto.cuenta * producto.price}
+                        </span>
                       </li>
                     </ul>
                   );
@@ -224,7 +226,7 @@ function Cart() {
                 <ul class="list-group mb-3">
                   <li class="list-group-item d-flex justify-content-between">
                     <span>Total </span>
-                    <strong>{totalPrice * cantidad}</strong>
+                    <strong>{Subtotal}</strong>
                   </li>
                 </ul>
 
@@ -546,14 +548,3 @@ function Cart() {
 }
 
 export default Cart;
-
-{
-  /* //SUBTOTAL */
-}
-{
-  /* {cantidad * producto.precio} */
-}
-
-{
-  /* <h1> {cantidadFinal[0].precio} </h1> */
-}
