@@ -27,8 +27,6 @@ function Cart() {
     suma += element.price * element.cuenta;
   });
 
-  console.log(suma, "roqioiaosjdkkaosdj");
-
   var Subtotal = suma.toFixed(2);
 
   const [lgShow, setLgShow] = useState(false);
@@ -213,7 +211,6 @@ function Cart() {
                       <li class="list-group-item d-flex justify-content-between lh-condensed">
                         <div>
                           <h6 class="my-0">{producto.articulo} </h6>
-                          <small class="text-muted">Brief description</small>
                         </div>
                         <span class="text-muted">
                           {producto.cuenta * producto.price}

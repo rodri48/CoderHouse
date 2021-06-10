@@ -3,10 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CantContext } from "../components/CantContext";
+import Modal from "react-bootstrap/Modal";
 
 //import ItemCounter from "../components/ItemCounter";
 
-const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
+const Item = ({ id, imagen, articulo, Marca, price, contador, stock }) => {
   const { canti, finalCounter, booleano, idCarrito } = useContext(CantContext);
   // eslint-disable-next-line no-unused-vars
   const [cantidad, setCantidad] = canti;
@@ -28,11 +29,16 @@ const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
     Marca,
     price,
     contador,
+    stock,
   });
 
-  const obj = Object.assign(producto, cuentaArticulo);
+  //modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  console.log(show, "show");
 
-  console.log(obj, "fusionando 2 objetos");
+  const obj = Object.assign(producto, cuentaArticulo);
 
   function handleClick(product) {
     setAddToCart((addToCart) => (addToCart = true));
@@ -46,6 +52,12 @@ const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
   }
 
   function handlePlus(id) {
+    if (producto.stock === state) {
+      return state && setShow(true);
+    } else {
+      setstate(state + 1);
+    }
+
     setstate(state + 1);
 
     setcuentaArticulo({ id: id, cuenta: cuentaArticulo.cuenta + 1 });
@@ -80,7 +92,25 @@ const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
                 -
               </button>
 
-              <h7>{state} </h7>
+              {producto.stock === state ? <h7>{state} </h7> : <h7>{state} </h7>}
+              {producto.stock === state && (
+                <Modal show={show} onHide={handleClose} animation={false}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Atencion!</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    Hemos alcanzado el numero de productos en stock disponibles
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Cerrar
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                      De acuerdo
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              )}
 
               <button
                 style={{

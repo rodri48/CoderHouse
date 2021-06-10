@@ -1,6 +1,7 @@
 import Item from "./Item";
 
 const ItemList = ({ data }) => {
+  console.log(data, "data");
   return (
     <div className="items">
       {data.map((dato, idx) => {
@@ -13,6 +14,7 @@ const ItemList = ({ data }) => {
             price={dato.price}
             id={dato.id}
             contador={dato.cuenta}
+            stock={dato.stock}
           ></Item>
         );
       })}
