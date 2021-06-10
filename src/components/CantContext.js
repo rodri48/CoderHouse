@@ -6,7 +6,7 @@ export const Cantidad = ({ children }) => {
   const [cantidad, setCantidad] = useState(0);
   const [cantidadFinal, setCantidadFinal] = useState([]);
   const [addToCart, setAddToCart] = useState(false);
-  const [idCart, setCart] = useState(0);
+  const [idCart, setCart] = useState([]);
 
   return (
     <CantContext.Provider

@@ -15,9 +15,10 @@ const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
   const [addToCart, setAddToCart] = booleano;
   const [idCart, setCart] = idCarrito;
   const [state, setstate] = useState(0);
-  const [cuentaCarrro, setcuentaCarrro] = useState({ contador: 0 });
-
-  const [id1, setid1] = useState(0);
+  const [cuentaArticulo, setcuentaArticulo] = useState({
+    id: 0,
+    cuenta: 0,
+  });
 
   // eslint-disable-next-line no-unused-vars
   const [producto, setproducto] = useState({
@@ -28,41 +29,26 @@ const Item = ({ id, imagen, articulo, Marca, price, contador }) => {
     price,
     contador,
   });
-  /* 
-  console.log(state, "state");
-  console.log(id1, "el id papu");
-  console.log(cuentaCarrro);
- */
-  console.log(cantidadFinal, "objeto con productos");
 
-  console.log("cantidad ", cantidad);
+  const obj = Object.assign(producto, cuentaArticulo);
 
-  // Cantidad carrito
-
-  /*   let totalProducto = [];
-
-  for (let i = 0; i < cantidadFinal.length; i++) {
-    totalProducto = totalProducto.push(cantidadFinal);
-  }
-
-  console.log(totalProducto, "total"); */
+  console.log(obj, "fusionando 2 objetos");
 
   function handleClick(product) {
     setAddToCart((addToCart) => (addToCart = true));
-    //cantidad individual carrito
-    //setCantidadFinal(totalProducto);
 
     setCantidadFinal([...cantidadFinal, producto]);
 
-    setCart(id1);
     setCantidad((cuenta) => cuenta + state);
+
+    setCart([...idCart, cuentaArticulo]);
     setstate(0);
   }
 
   function handlePlus(id) {
     setstate(state + 1);
-    setid1(id);
-    setcuentaCarrro({ contador: cuentaCarrro.contador + 1 });
+
+    setcuentaArticulo({ id: id, cuenta: cuentaArticulo.cuenta + 1 });
   }
   function handleMinus() {
     if (state === 0) {

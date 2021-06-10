@@ -8,7 +8,7 @@ function Cart() {
   // eslint-disable-next-line no-unused-vars
   const [cantidad, setCantidad] = canti;
   const [cantidadFinal, setCantidadFinal] = finalCounter;
-  //const [idCart, setCart] = idCarrito;
+  const [idCart, setCart] = idCarrito;
   // eslint-disable-next-line no-unused-vars
 
   const [addToCart, setAddToCart] = booleano;
@@ -19,8 +19,21 @@ function Cart() {
     totalPrice = totalPrice + cantidadFinal[i].price;
   }
 
+  console.log(totalPrice, "totalprice");
+  /*   console.log(idProducto.id, "id de los productos"); */
+
+  let suma = 0;
+  cantidadFinal.forEach((element) => {
+    suma += element.price * element.cuenta;
+  });
+
+  console.log(suma, "roqioiaosjdkkaosdj");
+
+  var Subtotal = suma.toFixed(2);
+
   const [lgShow, setLgShow] = useState(false);
 
+  //para borrar el producto
   let totalProducto = [];
 
   for (let i = 0; i < cantidadFinal.length; i++) {
@@ -76,17 +89,20 @@ function Cart() {
                     </div>
                   </td>
                   <td class="col-md-1 text-left">
-                    <strong class="label label-success ">Authorized</strong>
+                    <strong class="label label-success ">Autorizado</strong>
                   </td>
                   <td class="col-md-1" style={{ textAlign: "center" }}>
-                    {/* cantidad carrrito */}
-                    <strong> {cantidad} </strong>
+                    {/* trabajando aca */}
+                    {/*  {cantidadFinal.map((cantidadArticulo) => {
+                      return <strong>{cantidadArticulo.cuenta} </strong>;
+                    })} */}
+                    <strong>{producto.cuenta} </strong>
                   </td>
                   <td class="col-md-1 text-center">
                     <strong> {producto.price} $ </strong>
                   </td>
                   <td class="col-md-1 text-center">
-                    <strong>{cantidad * producto.price}</strong>
+                    <strong>{producto.cuenta * producto.price}</strong>
                   </td>
                   <td class="col-md-1">
                     <button
@@ -115,7 +131,7 @@ function Cart() {
               </td>
               <td class="text-right">
                 <h5>
-                  <strong>{totalPrice * cantidad} </strong>
+                  <strong>{Subtotal} </strong>
                 </h5>
               </td>
             </tr>
@@ -142,7 +158,7 @@ function Cart() {
 
               <td class="text-right">
                 <h3>
-                  <strong> {totalPrice * cantidad} </strong>
+                  <strong> {Subtotal} </strong>
                 </h3>
               </td>
             </tr>
@@ -328,7 +344,7 @@ function Cart() {
                         id="country"
                         required
                       >
-                        <option value="">Choose...</option>
+                        <option value="">Elige...</option>
                         <option>Argentina</option>
                         <option>Uruguay</option>
                         <option>Bolivia</option>
