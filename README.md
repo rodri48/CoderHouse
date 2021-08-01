@@ -3,4 +3,4 @@
 
 ## It has all the functionalities of purchase, choice of items, payment methods.
 
-## It was designed with React and was the final project for a course of the Institute (Coder House).
+## It was designed with React and was the final project for a course at the Institute Coder House.
