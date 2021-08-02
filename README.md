@@ -13,4 +13,4 @@
 ### Project
 
 This application helped me to understand how one of the most popular frameworks React.js works.
-With state management we can get to solve the following problems 
+with state management through hooks we can solve problems in a simpler and more stable way for the application.
