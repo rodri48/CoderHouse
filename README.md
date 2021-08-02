@@ -1,6 +1,16 @@
 # This is an app for a course of react in CoderHouse
 ## This app is an e-commerce.
 
-## It has all the functionalities of purchase, choice of items, payment methods.
+### Technologies
+*Javascript
+*React
+*CSS
+*HTML
+*React-bootstrap
+*React-Router-dom
+*Firebase
 
-## It was designed with React and was the final project for a course at the Institute Coder House.
+### Project
+
+This application helped me to understand how one of the most popular frameworks React.js works.
+With state management we can get to solve the following problems 
